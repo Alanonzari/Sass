@@ -22,6 +22,11 @@ html {
 	flex-wrap: wrap;
 }
 
+.header{
+	@include colorfondo(colors);
+	background-color: (colors);
+}
+
 .navegador {
 	ul {
 		display: flex;
@@ -76,10 +81,8 @@ textarea {
 }
 
 .Formularios {
-	display: flex;
+	@extend %disposicion;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin: 5rem 4rem;
 	flex-wrap: wrap;
 }
@@ -89,19 +92,18 @@ textarea {
 	margin-top: 1rem;
 	font-size: 1.5rem;
 	background-color: $color1;
-	border-radius: 0.5rem;
 	font-family: $tipografia2;
 		&:hover{
 			background-color: $color2;
-		}
-}
+
+		}border-radius: map-get($borde, border-r );
+		
+} 
 
 .pieDePagina {
-	display: flex;
+	@extend %disposicion;
 	font-size: 2rem;
 	color: $color4;
-	text-align: center;
-	justify-content: center;
 	flex-direction: column;
 	background-color: $bg-color1;
 	flex-wrap: wrap;
