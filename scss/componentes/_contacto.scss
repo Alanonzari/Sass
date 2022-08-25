@@ -6,6 +6,7 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 }
+/*
 .imagenDeFondo {
 	background-image: url(../Imagenes/fondo.jpg);
 	background-attachment: fixed;
@@ -13,6 +14,12 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+	*/
+
+	body{
+		background-color: rgb(238, 227, 238);
+	}
+
 .header {
 	display: flex;
 	flex-direction: row;
@@ -20,6 +27,7 @@ html {
 	align-items: center;
 	padding: 3rem 3rem;
 	flex-wrap: wrap;
+	background-color:white;
 }
 
 .header{
@@ -39,11 +47,11 @@ html {
 	li {
 		a {
 			text-decoration: none;
-			color: $color3;
+			color: $color4;
 			padding: 2rem;
             
 			&:hover {
-				background-color: $bg-color;
+				background-color: grey;
 			}
 		}
 
@@ -52,11 +60,17 @@ html {
 	}
 }
 .parrafos {
+	padding-bottom: 2rem;
 	h1 {
 		color: $color3;
-		font-size: 4rem;
-		text-align: center;
+		padding: 4rem 0;
+		font-size: 3.5rem;
+		margin-left: 45rem;
+		justify-content: center;
 		font-family: $tipografia1;
+		color: rgba(7, 7, 125, 0.707);
+		font-weight: bold;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	p {
 		font-size: 2rem;
@@ -66,39 +80,70 @@ html {
 	}
 }
 
-span {
-	color: $color2;
+
+
+form {
+	width: 59rem;
+	margin: auto;
+	margin-top: 4rem;
+	background-color: rgba(0, 0, 0, 0.561);
+	padding: 3rem 4rem;
+	box-sizing: border-box;
+	border-radius: 1rem;
+	box-shadow: 2rem 2rem 6rem 1rem;
 }
-
-	input {
-			font-size: 2rem;
-			display: block;
-			margin: 2rem;
-		}
-
-textarea {
+h2 {
+	color: rgba(0, 0, 0, 0.561);
+	font-size: 3rem;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 0.8rem;
+}
+input {
+	width: 50rem;
+	margin-bottom: 2rem;
 	font-size: 2rem;
+	padding: 1rem;
+	border: none;
+}
+textarea {
+	width: 50rem;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	padding: 1rem;
+	border: none;
+	min-height: 10rem;
+	max-height: 20rem;
+	max-width: 50rem;
+}
+#boton {
+	background-color:rgb(172, 18, 115);;
+	color: $color4;
+	transition: all 1s;
+    box-shadow: inset 0 0 2rem 0;
+	&:hover {
+		background-color: $color2;
+		color: white;
+		cursor: pointer;
+	}border-radius: map-get($borde, border-r );
 }
 
-.Formularios {
-	@extend %disposicion;
-	flex-direction: column;
-	margin: 5rem 4rem;
-	flex-wrap: wrap;
+
+.wsp{ color: green;
+    position: fixed;
+    right: 4rem;
+    bottom: 3rem;
+    transition: all 1s;
+
+	i{
+		color: green;
+		font-size: 7rem;
+	}
+	&:hover{
+		transform: scale(1.3);
+	}
+
 }
-
-.boton{
-	padding: 0.7rem 5rem;
-	margin-top: 1rem;
-	font-size: 1.5rem;
-	background-color: $color1;
-	font-family: $tipografia2;
-		&:hover{
-			background-color: $color2;
-
-		}border-radius: map-get($borde, border-r );
-		
-} 
 
 .pieDePagina {
 	@extend %disposicion;
@@ -113,4 +158,11 @@ textarea {
 i {
 	color: $color4;
 	font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px){
+
+	form{
+		width: 100%;
+	}
 }

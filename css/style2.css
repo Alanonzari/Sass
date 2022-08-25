@@ -8,12 +8,9 @@ html{
     box-sizing: border-box;
 }
 
-.imagenDeFondo{
-    background-image: url(../Imagenes/fondo.jpg);
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+body{
+    background-color: rgb(238, 227, 238);
 }
 
 .header{
@@ -23,6 +20,7 @@ html{
     align-items: center;
     padding: 3rem 3rem;
     flex-wrap: wrap;
+    background-color: white;
   
 
 }
@@ -35,7 +33,6 @@ html{
 .navegador ul{
     display: flex;
     list-style: none;
-    margin:auto;
     font-size: 2.4rem;
     margin: 1rem;
     flex-wrap: wrap;
@@ -43,7 +40,7 @@ html{
 
 .navegador li a{
     text-decoration: none;
-    color: wheat;
+    color: black;
     padding: 2rem;
 }
 
@@ -53,33 +50,35 @@ html{
 }
 
 .navegador li a:hover{
-    background-color: peru;
+    background-color:gray;
 }
 
 
-
-
-
-
-
+.parrafos{
+    display: flex;
+    flex-direction: column;
+}
 
 .parrafos h1{
-    color: white;
+    color: rgba(7, 7, 125, 0.707);
+    margin: 1rem 1rem;
+    padding-top: 4rem;
     font-size: 4rem;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 
 .parrafos p {
-    font-size: 2rem;
+    font-size: 2.7rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: peru;
-}
+    padding: 3rem;
+    color: rgba(0, 0, 0, 0.561);
+    font-weight: bold;
 
-span{
-    color: peru
+
 }
 
 
@@ -94,59 +93,65 @@ span{
     }
     */
 .texto h2{
-     color: white;
+     color: rgba(7, 7, 125, 0.707);;
      font-size: 3.4rem;
      padding-bottom: 3rem;
      text-align:center;
-     font-family: 'Times New Roman', Times, serif;
-     font-weight: 300;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
     }
     
 .texto p{
     font-size: 2.5rem;
-    color: peru;
+    color: rgba(0, 0, 0, 0.561);
     padding: 2rem;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
     }
 
 
-/*
+
 .redneck{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 3rem 0;
-    align-items: center;
+    padding: 5rem 0;
+
 }
 
-*/
+
 .redneck h2{
-    color: white;
+    color: rgba(7, 7, 125, 0.707);
     font-size: 3.4rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     text-align: center;
+    font-weight: bold;
 
 }
 
 
 .redneck p{
   font-size: 2.5rem;
-  color: peru;
+    color: rgba(0, 0, 0, 0.561);
     padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: bold;
 }
 
 .redneck-imagen{ 
     display: flex;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1.5rem -1.5rem 3rem;
+    
 }
 
 .imagen{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1.5rem -1.5rem 3rem;
 
 }
 .row{
@@ -158,25 +163,32 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
     flex-wrap: wrap;
 }
 
-button{
+.Centrado img{
+    box-shadow: 1.5rem -1.5rem 3rem;
+}
+
+
+.click{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.6rem 2rem;
+    padding: 0.6rem 4rem;
     margin: 0.5rem 0.5rem;
-    font-size: 1.5rem;
-    background-color: white;
-    border-radius: 3rem;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(172, 18, 115);
     flex-wrap: wrap;
+    border-radius: 0.4rem;
+    transition: all 1s;
+    box-shadow: inset 0 0 2rem 0;
 }
-button:hover{
+.click:hover{
 background-color: peru;
-
+color: white;
 }
 
 
@@ -212,7 +224,9 @@ textarea{
 }
 
 
-
+h5{
+    color: black;
+}
 
 
 
@@ -246,7 +260,7 @@ i{
     position: fixed;
     right: 4rem;
     bottom: 3rem;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .wsp i {
@@ -255,7 +269,7 @@ i{
 }
 
 .wsp:hover{
-    transform: scale(2);
+    transform: scale(1.3);
 }
 
 
@@ -273,6 +287,7 @@ i{
     align-items: center;
     padding: 3rem 3rem;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 
@@ -288,7 +303,7 @@ i{
 
 .navegador-grid li a{
     text-decoration: none;
-    color: wheat;
+    color: black;
     padding: 2rem;
 }
 
@@ -298,7 +313,7 @@ i{
 }
 
 .navegador-grid li a:hover{
-    background-color: peru;
+    background-color: gray;
 }
 
 
@@ -306,21 +321,13 @@ i{
 
 
 .parrafos-grid h1{
-    color: white;
+    color: rgba(7, 7, 125, 0.707);
     font-size: 4rem;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-
-.parrafos-grid p {
-    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: peru;
+    padding: 3rem 0;
+    font-weight: bold;
 }
-
-
 
 
 
@@ -353,6 +360,26 @@ i{
     grid-area: sec;
 }
 
+
+.Centrado-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+    transition: all 1s;
+}
+
+.Centrado-grid:hover{
+    transform: scale(1.1);
+}
+
+.Centrado-grid img{
+    box-shadow: 1.5rem -1.5rem 3rem;
+}
+
+
 .pieDePagina-grid{
     grid-area: foot;
 }
@@ -362,9 +389,9 @@ i{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "header"
-    "sec"
-    "foot";
+    "header header"
+    "sec sec"
+    "foot foot";
     
 }
 
@@ -392,17 +419,25 @@ i{
 
 .carouselh2 h2{
     color: white;
-    background-color: grey;
     font-size: 4rem;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
     padding:2rem;
 
 }
 
 .carouselh2{
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 14.6rem;
+    background-color: gray;
 }
+
+.carousel-item{
+    width: 100%;
+    height: 65rem;
+   
+  }
+
